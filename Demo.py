@@ -1,0 +1,12 @@
+f1=open("File1.txt","r")
+f2=open("File2.txt","r")
+f3=open("File3.txt","w")
+lst1=f1.readlines()
+lst2=f2.readlines()
+n=len(lst1)
+for i in range(n):
+    f3.write(lst1[i])
+    f3.write(lst2[i])
+f1.close()
+f2.close()
+f3.close()
